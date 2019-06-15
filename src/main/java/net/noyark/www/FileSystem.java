@@ -19,6 +19,7 @@ public class FileSystem {
             properties.setProperty("start","7:00");
             properties.setProperty("end","23:00");
             properties.setProperty("round-ms","1000");
+            properties.setProperty("email","");
             FileOutputStream out = new FileOutputStream(propName);
             properties.store(out,"密码都知道，loginname是你的固定名字.repo指定存储库名字");
             out.flush();
