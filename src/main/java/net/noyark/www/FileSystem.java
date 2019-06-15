@@ -11,7 +11,7 @@ public class FileSystem {
     public static Properties setProperties() throws IOException {
         File file = new File(System.getProperty("user.dir")).getParentFile();
         String propName = file+"/info.properties";
-        if(!file.exists()){
+        if(!new File(propName).exists()){
             Properties properties = new Properties();
             properties.setProperty("password","");
             properties.setProperty("login-name","");
